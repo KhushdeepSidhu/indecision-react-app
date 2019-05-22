@@ -5,8 +5,23 @@
   "repository": "git@github.com:KhushdeepSidhu/indecision-react-app.git",
   "author": "<khushdeep009@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "live-server public/",
+    "build": "webpack --watch",
+    "build-babel": "babel src/scripts/app.js --out-file public/scripts/app.js --presets=env,react --watch"
+  },
   "dependencies": {
+    "babel-cli": "6.26.0",
+    "babel-loader": "7.1.4",
     "babel-preset-env": "1.5.2",
-    "babel-preset-react": "6.24.1"
+    "babel-preset-react": "6.24.1",
+    "live-server": "^1.2.1",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "validator": "10.11.0",
+    "webpack": "4.31.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.2"
   }
 }
